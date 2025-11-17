@@ -1,3 +1,4 @@
+//USE THIS VERSION
 import java.io.*;
 import java.net.*;
 import java.util.Scanner;
@@ -25,7 +26,7 @@ public class SimpleClient {
 
     public void close() {}
 
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) throws Exception {
         SimpleClient a = new SimpleClient("127.0.0.1", 8888);
         FileOperator file = new FileOperator("client.txt");
         while (true) {
@@ -43,6 +44,7 @@ public class SimpleClient {
     }
 }
 
+//OLD VERSION
 // import java.io.*;
 // import java.net.*;
 // import java.util.Scanner;
